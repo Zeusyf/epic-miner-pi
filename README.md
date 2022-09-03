@@ -2,7 +2,15 @@
 
 A standalone mining implementation intended for mining epic against a running Epic node.
 
-## This branch is customized for RandomX using Johannes Hahn's randomx-rs repo so it will build and run on aarch64 Raspberry Pi4
+This branch is customized for RandomX using Johannes Hahn's randomx-rs repo so it will build and run on aarch64 Raspberry Pi4
+
+## Build steps
+
+```sh
+git clone https://github.com/gbkelley/epic-miner-pi
+cd epic-miner-pi
+cargo build
+```
 
 ## Supported Platforms
 
