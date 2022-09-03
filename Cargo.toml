@@ -53,9 +53,9 @@ features = ["win32"]
 [target.'cfg(unix)'.dependencies]
 cursive = "0.12"
 
-[[test]]
-name = "cucumber"
-harness = false
+#[[test]]
+#name = "cucumber"
+#harness = false
 
 [dependencies.randomx_miner]
 package = "randomx_miner"
