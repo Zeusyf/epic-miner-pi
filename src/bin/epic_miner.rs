@@ -15,14 +15,15 @@
 //! Stratum client implementation, for standalone mining against a running
 //! epic node
 #[cfg(feature = "cpu")]
-extern crate cuckoo_miner as cuckoo;
+extern crate randomx_miner as randomx;
+//extern crate cuckoo_miner as cuckoo;
 #[cfg(feature = "cuda")]
 extern crate cuckoo_miner_cuda as cuckoo;
 #[cfg(feature = "cuda")]
 extern crate progpow_miner_cuda as progpow;
 #[cfg(feature = "opencl")]
 extern crate progpow_miner_opencl as progpow;
-extern crate randomx_miner as randomx;
+
 
 extern crate epic_miner_config as config;
 extern crate epic_miner_core as core;
@@ -271,11 +272,11 @@ fn main() {
 			mining_config.algorithm.clone().unwrap(),
 			&mining_config,
 		), //randomx::RxMiner::new(&mining_config),
-		Algorithm::Cuckoo => start_miner(
-			cuckoo::CuckooMiner::new(&mining_config),
-			mining_config.algorithm.clone().unwrap(),
-			&mining_config,
-		),
+		//Algorithm::Cuckoo => start_miner(
+			//cuckoo::CuckooMiner::new(&mining_config),
+			//mining_config.algorithm.clone().unwrap(),
+			//&mining_config,
+		//),
 		#[cfg(feature = "opencl")]
 		Algorithm::ProgPow => start_miner(
 			progpow::PpMiner::new(&mining_config),
