@@ -2,6 +2,8 @@
 
 A standalone mining implementation intended for mining epic against a running Epic node.
 
+## This branch is customized for RandomX using Johannes Hahn's randomx-rs repo so it will build and run on aarch64 Raspberry Pi4
+
 ## Supported Platforms
 
 At present, only mining plugins for linux-x86_64 and MacOS exist. This will likely change over time as the community creates more solvers for different platforms.
