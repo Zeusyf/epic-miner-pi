@@ -10,6 +10,7 @@ This branch is customized for RandomX using Johannes Hahn's randomx-rs repo so i
 git clone https://github.com/gbkelley/epic-miner-pi
 cd epic-miner-pi
 cargo build
+Note: Sample Cargo.toml file included. Modify and leave in epic-server-pi folder. Leave hard_aes = false.
 ```
 
 ## Supported Platforms
