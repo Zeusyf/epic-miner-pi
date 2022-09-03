@@ -22,7 +22,7 @@ stdout_log_level = "Info"
 log_to_file = true
 
 # Log level for file: Critical, Error, Warning, Info, Debug, Trace
-file_log_level = "Debug"
+file_log_level = "Warning"
 
 # Log file path
 log_file_path = "./epic-miner.log"
@@ -43,13 +43,13 @@ algorithm = "RandomX"
 run_tui = false
 
 # listening epic stratum server url
-stratum_server_addr = "127.0.0.1:3416"
+stratum_server_addr = "51pool.online:4416"
 
 # login for the stratum server (if required)
-#stratum_server_login = "http://192.168.1.100:3415"
+stratum_server_login = "<login_name#pi4>"
 
 # password for the stratum server (if required)
-#stratum_server_password = "x"
+stratum_server_password = "<password>"
 
 # whether tls is enabled for the stratum server
 stratum_server_tls_enabled = false
@@ -64,7 +64,7 @@ stratum_server_tls_enabled = false
 threads = 3
 jit = true
 large_pages = false
-hard_aes = true
+hard_aes = false
 
 ###############################################################
 ### GPU CONFIGURATION (works just on the progpow)
@@ -241,4 +241,5 @@ nthreads = 2
 # ID withing the platform
 #device = 0
 #edge_bits = 31
+
 
