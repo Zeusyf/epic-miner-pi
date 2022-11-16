@@ -560,6 +560,7 @@ dependencies = [
  "epic_miner_plugin",
  "epic_miner_util",
  "native-tls",
+ "openssl",
  "pancurses",
  "rand 0.3.23",
  "randomx_miner",
